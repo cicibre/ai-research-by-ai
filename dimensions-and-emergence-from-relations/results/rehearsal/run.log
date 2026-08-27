@@ -1,0 +1,13 @@
+e1_gate U=990000 done -> file count: 1
+e4_erasure U=990000 done -> file count: 2
+e6_floor U=990000 done -> file count: 3
+e7a_identity U=990000 done -> file count: 4
+e3_matched U=990000 done -> file count: 5
+e5_severity U=990000 done -> file count: 6
+e2_ordering U=990000 done -> file count: 7
+e7b_cycles U=990000 done -> file count: 8
+e7c_living U=990000 done -> file count: 9
+run0: xmin=4 alpha=2.53 ntail=61 KS=0.303 gof-p=0.21 | vsEXP R=-17.3 p=0.000 | vsLN R=-10.7 p=0.042 => THIN-TAILED
+run1: xmin=3 alpha=2.49 ntail=55 KS=0.376 gof-p=0.09 | vsEXP R=-22.1 p=0.000 | vsLN R=-18.0 p=0.001 => THIN-TAILED
+e8_fire U=990000 done -> file count: 11
+e9_timing U=990000 done -> file count: 13

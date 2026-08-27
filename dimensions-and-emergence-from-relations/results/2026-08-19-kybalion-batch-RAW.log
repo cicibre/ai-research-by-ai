@@ -1,0 +1,19 @@
+# KYBALION batch (seal 642e43c)
+
+K-VIBRATION: marked 6537 edges at stationarity; 6532 died in 300 ticks (100%); C band ±5% held=False
+VERDICT K-VIBRATION: INSUFFICIENT (C band violated — not at stationarity)
+
+K-GENDER (800 ticks per arm):
+  full: final C=0.950  (burn-rate 0.66)
+  grow: final C=0.015  (burn-rate 1.00)
+  prune: final C=0.373  (burn-rate 0.00)
+VERDICT K-GENDER: GENDER-CONFIRMED (both ablations degrade below half)
+
+K-CORRESPONDENCE (N=450, N=1800; T=3000):
+  N=450: stationary C=0.885 (N=900 reference 0.86; within ±0.10: True)
+  N=1800: stationary C=0.750 (N=900 reference 0.86; within ±0.10: False)
+  (tail verdicts: run tail-analysis-CSN.py on corr-N450.json / corr-N1800.json)
+# BATCH DONE
+# K-VIBRATION re-run (deeper stationarity: track from t=2600, sealed INSUFFICIENT branch)
+marked 6516 edges; 6504 died in 300 ticks (100%); C band held=False (mean C=0.732)
+VERDICT K-VIBRATION: INSUFFICIENT AGAIN (C band violated)

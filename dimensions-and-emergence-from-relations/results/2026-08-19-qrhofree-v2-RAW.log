@@ -1,0 +1,18 @@
+## LEG 1 — imposed triad at s in {0.02, 0.05} (n=60/arm)
+s=0.02: rho=0.924 CI[0.877,0.971]  predicted 0.955  => MATCH
+s=0.05: rho=0.844 CI[0.801,0.888]  predicted 0.890  => MATCH
+
+## LEG 2 — endogenous, instrumented at burn time (T=4000, burn>=30 edges)
+qualifying burns: 0
+VERDICT LEG 2: INSUFFICIENT (<100 qualifying burns)
+# DONE
+## LEG 1 — imposed triad at s in {0.02, 0.05} (n=60/arm)
+s=0.02: rho=0.924 CI[0.877,0.971]  predicted 0.955  => MATCH
+s=0.05: rho=0.844 CI[0.801,0.888]  predicted 0.890  => MATCH
+
+## LEG 2 — endogenous, instrumented at burn time (T=4000, burn>=30 edges)
+qualifying burns: 125
+k_free=2.01 CI[1.80,2.41] (n=124)  sealed bars: within[2,3]=False overlaps[2.0,2.6]=True
+VERDICT LEG 2: UNDECIDED
+severity range of qualifying burns: 0.005..2.357 median 0.006
+# DONE

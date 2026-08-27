@@ -1,0 +1,97 @@
+{
+ "E1_gate": "OPEN",
+ "E1_values": {
+  "raw_deg": 8.57,
+  "est_C": 0.712,
+  "est_LCC": 0.639
+ },
+ "P2.1_ordering": "PASS",
+ "P2.2_residue": "PASS-SCOPED",
+ "P2.2_ds_cells_hit": 0,
+ "P2.3_rho": {
+  "0.5": 0.182,
+  "0.65": 0.39
+ },
+ "P2.3_inband": "PASS",
+ "P2.4_control": "PASS",
+ "P2.4_gaps": [
+  0.0241,
+  0.0275
+ ],
+ "E3_matched": "INSUFFICIENT",
+ "E4_kvar": "INSUFFICIENT",
+ "E4_silent": "PASS",
+ "E4_mde": {
+  "C": 0.0017,
+  "L": 0.06514,
+  "kvar": 0.50096
+ },
+ "E4_subthreshold": {
+  "C": {
+   "mean": 0.00148,
+   "z": 2.44
+  },
+  "L": {
+   "mean": -0.00639,
+   "z": -0.27
+  }
+ },
+ "P5.1_monotone": "PASS",
+ "P5.2_exponent": 2.14,
+ "P5.2_inband": "PASS",
+ "P5.3_boundary": "PASS",
+ "P5_rhos": {
+  "0.10": 0.661,
+  "0.20": 0.413,
+  "0.35": 0.395,
+  "0.50": 0.291,
+  "0.65": 0.069,
+  "0.80": 0.034
+ },
+ "E6_floor": "PASS",
+ "E6_advs": {
+  "0": 0.0276,
+  "2": 0.0277,
+  "8": 0.0448
+ },
+ "E7a_deg": "FAIL",
+ "E7a_edge": "FAIL",
+ "E7a_shape_blind": "PASS",
+ "E7a_selfj": 0.4911,
+ "E7a_selfj_inband": "PASS",
+ "E7a_cross": "PASS",
+ "E7b_ds_flat": "PASS",
+ "E7b_ksd_climbs": "PASS",
+ "E7c_300_name": "FAIL",
+ "E7c_1000_inversion": "FAIL",
+ "E7c_3000_mortality": "PASS",
+ "E7c_counts": {
+  "30": {
+   "scar": 2,
+   "name": 2,
+   "shape": 2
+  },
+  "100": {
+   "scar": 2,
+   "name": 2,
+   "shape": 2
+  },
+  "300": {
+   "scar": 2,
+   "name": 2,
+   "shape": 2
+  }
+ },
+ "P8.1_law1": "FAIL",
+ "P8.2_law2": "INSUFFICIENT",
+ "P8.3_tail": "FAIL",
+ "P8.3_counts": {
+  "THIN-TAILED": 2
+ },
+ "P8.4_oracle": "FAIL",
+ "P8.4_rhos": [
+  0.885,
+  0.89
+ ],
+ "E9": "INSUFFICIENT (gaps 0/0)"
+}

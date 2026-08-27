@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/cc/academics/dimensions-and-emergence-from-relations/v2/battery2.py", line 619, in <module>
+    verdict(sys.argv[2], sys.argv[3])
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cc/academics/dimensions-and-emergence-from-relations/v2/battery2.py", line 523, in verdict
+    a6, a42, s42 = fl["6"]["adv"], fl["42"]["adv"], fl["42"]["sem"]
+                   ~~^^^^^
+KeyError: '6'

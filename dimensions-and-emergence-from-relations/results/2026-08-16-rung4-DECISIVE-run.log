@@ -1,0 +1,10 @@
+# RUNG-4 DECISIVE  seeds=100  N=[900, 1600]  f=[0.5, 0.65]  (sealed bar: |gap|>2*SEM AND widens)
+f=0.50 N=  900 | UP=3.957±0.046(n=100) DOWN=3.921±0.041(n=100) | gap=+0.036 2SEM=0.122 sigma=+0.59
+f=0.50 N= 1600 | UP=4.369±0.040(n=100) DOWN=4.316±0.041(n=100) | gap=+0.053 2SEM=0.115 sigma=+0.92
+  => f=0.5: gap 900->1600 = +0.036 -> +0.053  widen=True  bigN_sigma=+0.92  => INSUFFICIENT (sub-2s)
+
+f=0.65 N=  900 | UP=3.467±0.027(n=100) DOWN=3.290±0.022(n=100) | gap=+0.176 2SEM=0.070 sigma=+5.04
+f=0.65 N= 1600 | UP=3.720±0.022(n=100) DOWN=3.508±0.022(n=100) | gap=+0.212 2SEM=0.062 sigma=+6.83
+  => f=0.65: gap 900->1600 = +0.176 -> +0.212  widen=True  bigN_sigma=+6.83  => H_RUNG4 (clears 2s + widens)
+
+# DONE

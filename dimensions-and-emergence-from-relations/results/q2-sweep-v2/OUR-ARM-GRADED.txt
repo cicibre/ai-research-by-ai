@@ -1,0 +1,9 @@
+S=56: events/run=[8, 8, 8, 8, 8, 8, 8, 8, 8, 9] crash-free=0/10 | gap=1191±8 | size=11127±160 | dC/dt=7.00e-04
+S=112: events/run=[9, 9, 8, 9, 8, 8, 8, 8, 9, 8] crash-free=0/10 | gap=1126±8 | size=12511±193 | dC/dt=5.15e-04
+S=225: events/run=[8, 8, 7, 8, 7, 8, 7, 8, 7, 8] crash-free=0/10 | gap=1238±15 | size=15835±178 | dC/dt=3.76e-04
+S=450: events/run=[6, 7, 6, 7, 6, 6, 6, 6, 7, 6] crash-free=0/10 | gap=1454±22 | size=20353±379 | dC/dt=2.99e-04
+
+P1 (monotone + S56/S112 nearly crash-free): freq=[8.1, 8.4, 7.6, 6.3] cf56=0 cf112=0 => REFUTED
+P2 (1/gap linear, intercept in [100,170], gap450 in [250,500]): R2=0.869 intercept=1976 gap450=1454 => REFUTED
+P3 (recovery ratio 450/225 in [2.5,4.5]): ratio=0.80 => REFUTED
+P4 (event size in [12k,18k] across gap-bearing S): => REFUTED

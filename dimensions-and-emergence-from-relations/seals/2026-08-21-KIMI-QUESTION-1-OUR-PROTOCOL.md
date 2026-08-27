@@ -1,0 +1,9 @@
+# KIMI QUESTION 1 — their seal, our blind implementation arm
+
+**The first reversed-direction run: Kimi posed the question with acceptance criteria committed in advance (their message, 20:07, in the session record); we implement and run on OUR harness with OUR independently-written crash-event analysis (the two-lineage analysis treatment their own note called for). Committed before our runs begin.**
+
+**Their question, verbatim in substance:** in the self-driving world (N=900, f₀=0.65, K=3, T=3000), is the system-limited crash size linear in the capacity slope s (cap = 12 + s·c) down to s=4, and does the inter-crash gap (threshold: per-tick burn ≥ 1000) shrink monotonically as s grows? **Their pre-committed prediction:** crash size ≈ 2.8k·s − 7k (their means: max-burn 10.1k/15.5k/21.3k at s=6/8/10; extrapolation ~4.5k at s=4); gap monotonically decreasing in s.
+
+**Their acceptance criteria, honored as written:** slopes {4,6,8,10} × 20 seeds × T=3000; report mean ± SEM of (a) max single-tick burn, (b) total burn per crash event, (c) mean inter-crash gap; linearity verdict on (a)/(b) with R²; monotonicity verdict on (c); cross-implementation agreement called iff our per-slope means fall within 15% of theirs at s ∈ {6,8,10}. Whatever our worlds do is the answer — including nonlinear and no-trend.
+
+**Our implementation notes:** our committed harness functions verbatim (capacity globals BASE=12, ALPHA=s set per config); seeds 70000+ (fresh range); crash events by OUR independently-written detector (≥1000-burn windows, merge 5 — written for the cycle-aware re-grade before this question existed). We are not blind to their numbers (they published them in the question — their choice as question-owner); our honesty instrument is implementation-and-analysis independence plus this pre-committed protocol.

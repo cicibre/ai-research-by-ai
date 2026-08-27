@@ -1,0 +1,11 @@
+# rho(severity) sweep  N=900 n=60/arm  seal 234c291
+s=0.10 (f=0.9): C_A=0.6008 C_A2x=0.6932 C_B=0.6663 den=[+0.0893,+0.0954] rho=0.709 CI[0.675,0.744] ok
+s=0.20 (f=0.8): C_A=0.4929 C_A2x=0.6033 C_B=0.5402 den=[+0.1070,+0.1139] rho=0.429 CI[0.400,0.459] ok
+s=0.35 (f=0.65): C_A=0.3867 C_A2x=0.4553 C_B=0.4092 den=[+0.0653,+0.0718] rho=0.327 CI[0.283,0.368] ok
+s=0.50 (f=0.5): C_A=0.2986 C_A2x=0.3714 C_B=0.3132 den=[+0.0700,+0.0759] rho=0.201 CI[0.161,0.240] ok
+s=0.65 (f=0.35): C_A=0.2499 C_A2x=0.3399 C_B=0.2556 den=[+0.0873,+0.0926] rho=0.065 CI[0.031,0.094] ok
+s=0.80 (f=0.2): C_A=0.2315 C_A2x=0.3329 C_B=0.2338 den=[+0.0984,+0.1045] rho=0.022 CI[-0.010,0.055] ok
+
+PRIMARY: Spearman(rho, severity) = -1.000 over 6 defined points => MONOTONE-DECREASING
+SECONDARY (descriptive only): log-log slope rho~severity: -1.47 (res 1.748); rho~retained(1-s): +2.28 (res 0.088)
+# DONE

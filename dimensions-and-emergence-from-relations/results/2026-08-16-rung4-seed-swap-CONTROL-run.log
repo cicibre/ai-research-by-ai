@@ -1,0 +1,8 @@
+# RUNG-4 SEED-SWAP CONTROL  seeds=100  UP=1000..1099  DOWN=0..99  (swap of decisive assignment; physics functions verbatim from committed 08-15 harness)
+f=0.50 N=  900 | UP=3.995±0.048(n=100) DOWN=3.885±0.041(n=100) | gap=+0.110 2SEM=0.127 sigma=+1.74
+f=0.50 N= 1600 | UP=4.412±0.039(n=100) DOWN=4.339±0.035(n=100) | gap=+0.073 2SEM=0.104 sigma=+1.40
+  => f=0.5: gap 900->1600 = +0.110 -> +0.073  widen=False  bigN_sigma=+1.40  => as-expected (sub-2sigma)
+f=0.65 N=  900 | UP=3.505±0.027(n=100) DOWN=3.269±0.024(n=100) | gap=+0.236 2SEM=0.073 sigma=+6.47
+f=0.65 N= 1600 | UP=3.722±0.021(n=100) DOWN=3.525±0.016(n=100) | gap=+0.197 2SEM=0.052 sigma=+7.61
+  => f=0.65: gap 900->1600 = +0.236 -> +0.197  widen=False  bigN_sigma=+7.61  => PHYSICS (gap survives swap)
+# DONE

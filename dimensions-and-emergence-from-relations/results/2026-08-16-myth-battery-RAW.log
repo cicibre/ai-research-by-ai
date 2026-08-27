@@ -1,0 +1,24 @@
+# MYTH BATTERY  N=900 f=0.65 n=60/arm  (seal 923374d)
+
+## E1 KINTSUGI — the second burn
+  PRIMARY final d_s: K-B=3.887±0.049 K-A2x=3.871±0.054 | diff=+0.015 sigma=+0.21 => NO-MEMORY-OF-BURN
+  secondary damage-response: dDelta K-B=+0.587±0.057  K-A2x=+0.985±0.060
+
+## E2 FIVE SUNS vs AGES OF MAN — iterated cycles
+  cycle 0: d_s=3.425±0.041  k_sd=3.672±0.018  (n=60)
+  cycle 1: d_s=3.994±0.061  k_sd=4.304±0.016  (n=60)
+  cycle 2: d_s=4.038±0.062  k_sd=4.784±0.016  (n=60)
+  cycle 3: d_s=4.044±0.068  k_sd=5.168±0.018  (n=60)
+  cycle 4: d_s=3.948±0.055  k_sd=5.490±0.020  (n=60)
+  PRIMARY cycle4 vs cycle1: cyc4=3.948±0.055 cyc1=3.994±0.061 | diff=-0.045 sigma=-0.55 => SATURATION
+
+## E3 NOAH — the curated remnant
+  PRIMARY ARK vs RANDOM: ARK=4.089±0.071 RANDOM=3.971±0.069 | diff=+0.118 sigma=+1.20 => NOT DETECTED
+
+## E4 GIANTS — the over-rigid first world
+  f0=0.85: d_s=3.604±0.032 (n=60)
+  f0=0.95: d_s=3.376±0.033 (n=60)
+  f0=1.0: d_s=3.268±0.029 (n=60)
+  PRIMARY f0=0.85 vs f0=1.0: f0=0.85=3.604±0.032 f0=1.0=3.268±0.029 | diff=+0.336 sigma=+7.75 => SEED-MONOTONE (maximal establishment wins)
+
+# DONE

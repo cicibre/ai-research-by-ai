@@ -1,0 +1,57 @@
+## SEAL 1+2 — ORACLE + HORIZON (seed 7001, T=2500)
+SEAL1 ORACLE: Spearman(load, next-10-tick burns) = +0.968; shuffled-null 95th = +0.074 => ORACLE-CONFIRMED
+  horizon@t=1400: first window-corr<0.5 at lead ~10 ticks  (10:+0.24, 30:+0.57, 50:+1.00, 70:+0.82 ...)
+  horizon@t=1520: first window-corr<0.5 at lead ~110 ticks  (10:+0.98, 30:+0.99, 50:+1.00, 70:+0.72 ...)
+  horizon@t=1640: first window-corr<0.5 at lead ~30 ticks  (10:+0.57, 30:+0.45, 50:+0.14, 70:+0.33 ...)
+  horizon@t=1760: first window-corr<0.5 at lead ~10 ticks  (10:+0.26, 30:+0.07, 50:+0.42, 70:+0.17 ...)
+  horizon@t=1880: first window-corr<0.5 at lead ~10 ticks  (10:+0.35, 30:+0.05, 50:+0.03, 70:-0.01 ...)
+  horizon@t=2000: first window-corr<0.5 at lead ~10 ticks  (10:-0.19, 30:+0.10, 50:-0.24, 70:-0.14 ...)
+  horizon@t=2120: first window-corr<0.5 at lead ~10 ticks  (10:+0.01, 30:+0.50, 50:-0.03, 70:-0.12 ...)
+  horizon@t=2240: first window-corr<0.5 at lead ~10 ticks  (10:-0.30, 30:+0.11, 50:-0.19, 70:+0.08 ...)
+SEAL2 HORIZON: median ~10 ticks (~3 months by the turnover calibration); spread 10–110
+# oracle DONE
+## SEAL 3 — WHAT SURVIVES LIVING (M=40, horizons +300/+1000/+3000)
+  world 0 lived to +3000
+  world 1 lived to +3000
+  world 2 lived to +3000
+  world 3 lived to +3000
+  world 4 lived to +3000
+  world 5 lived to +3000
+  world 6 lived to +3000
+  world 7 lived to +3000
+  world 8 lived to +3000
+  world 9 lived to +3000
+  world 10 lived to +3000
+  world 11 lived to +3000
+  world 12 lived to +3000
+  world 13 lived to +3000
+  world 14 lived to +3000
+  world 15 lived to +3000
+  world 16 lived to +3000
+  world 17 lived to +3000
+  world 18 lived to +3000
+  world 19 lived to +3000
+  world 20 lived to +3000
+  world 21 lived to +3000
+  world 22 lived to +3000
+  world 23 lived to +3000
+  world 24 lived to +3000
+  world 25 lived to +3000
+  world 26 lived to +3000
+  world 27 lived to +3000
+  world 28 lived to +3000
+  world 29 lived to +3000
+  world 30 lived to +3000
+  world 31 lived to +3000
+  world 32 lived to +3000
+  world 33 lived to +3000
+  world 34 lived to +3000
+  world 35 lived to +3000
+  world 36 lived to +3000
+  world 37 lived to +3000
+  world 38 lived to +3000
+  world 39 lived to +3000
++300 ticks (~7y): SCAR 18/40 [CARRIES]  NAME 32/40 [CARRIES]  SHAPE 1/40 [LOST] (chance 1)
++1000 ticks (~23y): SCAR 2/40 [LOST]  NAME 34/40 [CARRIES]  SHAPE 2/40 [LOST] (chance 1)
++3000 ticks (~70y): SCAR 0/40 [LOST]  NAME 3/40 [LOST]  SHAPE 1/40 [LOST] (chance 1)
+# living DONE

@@ -1,0 +1,118 @@
+{
+ "E1_gate": "OPEN",
+ "E1_values": {
+  "raw_deg": 8.5755,
+  "est_C": 0.7102,
+  "est_LCC": 0.6825
+ },
+ "P2.1_ordering": "PASS",
+ "P2.2_residue": "PASS",
+ "P2.2_ds_cells_hit": 1,
+ "P2.3_rho": {
+  "0.5": 0.245,
+  "0.65": 0.334
+ },
+ "P2.3_inband": "PASS",
+ "P2.4_control": "PASS",
+ "P2.4_gaps": [
+  0.0239,
+  0.0268
+ ],
+ "E3_matched": "PASS",
+ "E4_kvar": "PASS",
+ "E4_silent": "PASS",
+ "E4_mde": {
+  "C": 0.00092,
+  "L": 0.02882,
+  "kvar": 0.18414
+ },
+ "E4_subthreshold": {
+  "C": {
+   "mean": 0.00035,
+   "z": 1.08
+  },
+  "L": {
+   "mean": -0.0014,
+   "z": -0.14
+  }
+ },
+ "P5.1_monotone": "PASS",
+ "P5.2_exponent": 1.89,
+ "P5.2_inband": "PASS",
+ "P5.3_boundary": "PASS",
+ "P5_rhos": {
+  "0.10": 0.677,
+  "0.20": 0.424,
+  "0.35": 0.391,
+  "0.50": 0.214,
+  "0.65": 0.103,
+  "0.80": 0.034
+ },
+ "E6_floor": "PASS",
+ "E6_advs": {
+  "0": 0.0279,
+  "6": 0.0241,
+  "42": 0.0216
+ },
+ "E7a_deg": "PASS",
+ "E7a_edge": "PASS",
+ "E7a_shape_blind": "PASS",
+ "E7a_selfj": 0.4922,
+ "E7a_selfj_inband": "PASS",
+ "E7a_cross": "PASS",
+ "E7b_ds_flat": "PASS",
+ "E7b_ksd_climbs": "PASS",
+ "E7c_300_name": "PASS",
+ "E7c_1000_inversion": "PASS",
+ "E7c_3000_mortality": "PASS",
+ "E7c_counts": {
+  "300": {
+   "scar": 10,
+   "name": 17,
+   "shape": 1
+  },
+  "1000": {
+   "scar": 1,
+   "name": 14,
+   "shape": 0
+  },
+  "3000": {
+   "scar": 1,
+   "name": 1,
+   "shape": 2
+  }
+ },
+ "P8.1_law1": "PASS",
+ "P8.2_law2": "FAIL",
+ "P8.2_frac": 0.15,
+ "P8.3_tail": "PASS",
+ "P8.3_counts": {
+  "POWER-LAW": 10
+ },
+ "P8.4_oracle": "PASS",
+ "P8.4_rhos": [
+  0.954,
+  0.964,
+  0.971,
+  0.969,
+  0.96,
+  0.949,
+  0.975,
+  0.975,
+  0.953,
+  0.957
+ ],
+ "P9.1_subpoisson": "PASS",
+ "P9.2_decoupled": "PASS",
+ "P9.3_compression_AT_RISK": "PASS",
+ "P9.4_reset_null": "PASS",
+ "E9_numbers": {
+  "cv_control": 0.0707,
+  "cv_capped": 0.0693,
+  "corr_DT": 0.0175,
+  "ratio_ci": [
+   0.5858796809139863,
+   0.9104210317529875
+  ]
+ }
+}

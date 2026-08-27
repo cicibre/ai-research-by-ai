@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/cc/academics/dimensions-and-emergence-from-relations/v2/battery2.py", line 616, in <module>
+    verdict(sys.argv[2], sys.argv[3])
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cc/academics/dimensions-and-emergence-from-relations/v2/battery2.py", line 503, in verdict
+    V["E4_mde"] = {k: round(e[k]["mde80"], 5) for k in e}
+                            ~~~~^^^^^^^^^
+TypeError: 'bool' object is not subscriptable

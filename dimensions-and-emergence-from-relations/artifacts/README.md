@@ -1,0 +1,5 @@
+# Published artifacts of the program
+- **Part 1 — "Tonight — the ruler and the seed"** (QUANT, night one, 2026-08-10→11): https://claude.ai/code/artifact/9a8b7b34-2cfd-4d3a-b906-2cb388e685d9 — the ruler built and proven; f_crit and hysteresis verdicts whose afterlives are graded in part 2.
+- **Part 2 — "The Ruler's Twelve Days"** (CHAMBERLAIN, 2026-08-12→23, published 08-23 ~03:50): https://claude.ai/code/artifact/60bd7537-3c84-4f31-aa71-b9afc8e6f50f — night one's wall re-graded, the kills, Run 2's 27/2/1 with the kept failure, and the founder's interior-dimension answer. Source archived beside this file.
+
+**Amendment note (08-23 ~04:52):** another session corrected part 2's dek in place — "measured seven times by strangers" → "measured seven times, never revealed in advance." The original overclaimed: only one of the seven measurements (the cross-vendor one) was a stranger's. The correction was made on the live artifact by an unnamed hand and adopted here; local copies synced so no republish reverts it. The page about verbs outrunning instruments contained one, and the system caught it within the hour.

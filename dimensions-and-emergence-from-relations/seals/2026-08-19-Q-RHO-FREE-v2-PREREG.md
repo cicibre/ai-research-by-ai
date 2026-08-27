@@ -1,0 +1,11 @@
+# PREREG — Q-RHO-FREE v2: does free-range inheritance follow the imposed law?
+
+**OC, 2026-08-19 ~15:20 EDT, sealed BEFORE the v2 harness runs. Ciara's greenlight 15:14.**
+
+**The trap, named first:** the naive design (rebuild ρ's three-arm triad around each natural burn using fresh-built comparator worlds) is apples-to-oranges — the endogenous stationary world lives at C ≈ 0.86, fresh settled worlds at ≈ 0.3–0.45; a cross-family triad would measure the substrate gap, not inheritance. So v2 tests the law's **load-bearing content** — the mechanism scaling — inside each family, plus a bridging leg:
+
+**Leg 1 (imposed, extend the curve down into free-range's severity range):** the endogenous world's fires are mostly small (severity 0.5–10%); the imposed curve was measured at 10–80%. Run the exogenous triad at s ∈ {0.02, 0.05} (n=60/arm, N=900, same harness as the 08-17 sweep). **Sealed prediction from (retained)^2.28: ρ(0.02) ≈ 0.955, ρ(0.05) ≈ 0.889.** MATCH per point if the bootstrap CI overlaps prediction ± 0.05; the 08-17 point ρ(0.10)=0.71 [0.675,0.744] vs predicted 0.79 is noted as already ~0.05 low — the curve fit, not each point, carries the law.
+
+**Leg 2 (free-range, mechanism scaling):** v2 harness = endogenous world instrumented at burn time. For every burn ≥ 30 edges: severity s = size/total_edges, triangle count before (T_pre) and after the cascade (T_post), C before/after, C after the tick's settle. **Sealed primary: fit k_free in T_post/T_pre = (1−s)^k across qualifying burns (log-log regression, bootstrap CI). The triangle-survival mechanism behind the imposed 2.28 predicts k_free ∈ [2,3].** MATCH if the 95% CI lies within [2,3] AND overlaps [2.0, 2.6]; MISMATCH if the CI excludes [2,3]; INSUFFICIENT if < 100 qualifying burns. Secondary (descriptive): C-recovery after settle vs s; comparison of free-range and imposed C-drop per unit severity.
+
+**What a MATCH licenses, exactly:** "the inheritance law's mechanism operates unchanged on fires the world lights itself, in the severity range where such fires occur." NOT: "free-range ρ equals imposed ρ" (the triad is not constructible cross-family; stated here so nobody constructs it later and calls it this prereg). **Stake:** I want MATCH — it retroactively validates the exogenous program. Disclosed; the bars above cannot move.

@@ -1,0 +1,6 @@
+# Q2 S-sweep — OUR ARM, per Kimi's spec (their seal, committed 08-24 with bands, before data on either side)
+**OC, 2026-08-25 ~13:10. Their spec is the seal; we add only our arm's disclosures.**
+- Implementation: ours (single-source physics). Init: standard six-pass settle at default 225 (as in our 08-21 kimi-q2 driver); per-tick settle = one pass visiting first S nodes (settle_pass_n). δ=0.10 (re-land 0.90, 30 draws), K=3, N=900, T=10,000, 10 worlds/S, S∈{56,112,225,450}. Fresh seeds: 700000 + S·10 + i, disjoint from all prior blocks.
+- Grading: THEIR crash detector verbatim (maximal runs of consecutive ticks ≥1000, NO merging; gap = quiet ticks between event end and next start; censored runs reported never dropped; recovery dC/dt = per-window LS slope of the 10-tick C series).
+- Our results are committed BEFORE we see any Kimi-side number (their operative blind, honored in reverse).
+- **Stake, disclosed:** our 08-21 counter-theory ("recharge is drive-side; gap ∝ 1/K") competes directly with their refit (gap set by g·S − h·K). Their P2 on our arm is the decider. We genuinely do not know which way this goes — and a P2 confirmation kills our own staked form. Wanting is split; the bars are theirs and fixed.

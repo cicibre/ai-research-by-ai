@@ -1,0 +1,18 @@
+# SPEC (sealed, not yet run) — the endogenous-burn world: fires the world lights itself
+
+**OC, 2026-08-17 ~07:05 EDT, sealed at Ciara's direction. Status: DESIGN — no harness exists; the burn operator needs its own validation gates (below) before any physics question is asked. This spec fixes the questions and their grading BEFORE the instrument is built, so the builder cannot tune the world toward the wanted tail.**
+
+## The gap this closes
+Every burn in the program so far was exogenous — rewire(f) at a severity we chose. Every real system the model maps onto (fires, extinctions, crashes, avalanches) generates its own catastrophes, with sizes famously heavy-tailed. The bridge question: **do endogenous burns in this substrate produce a power-law size distribution — and does the seed/scar deposition inherit the tail?**
+
+## The model (minimal, no new physics beyond a threshold)
+Continuous drive + threshold release, sandpile-class, on the existing substrate: each tick, add k stress-edges at random (the drive — the trickster layer from the world-model sketch). Each node carries capacity c = base + α·(local clustering) — structure resists. When a node's degree exceeds capacity: it **topples** — its excess edges rewire randomly (the local burn), possibly pushing neighbors over capacity → cascade. A burn's SIZE = total edges rewired in one cascade. Between cascades, μ settling passes (grow_prune) — the gardener layer. Run T ticks past transient; record every burn size, and the world's C, d_s, k_sd time series.
+
+## Sealed questions and their grading (fixed now, before the harness exists)
+1. **Q-TAIL:** are burn sizes power-law distributed? Graded by the Clauset–Shalizi–Newman discipline, not by a straight-ish log-log plot: MLE α with x_min selection, KS goodness, AND likelihood-ratio tests against lognormal + exponential. Verdict POWER-LAW only if it beats both alternatives; HEAVY-TAILED-NOT-PL and THIN-TAILED are honest outcomes. (The straight-line-on-log-log temptation is this spec's named enemy.)
+2. **Q-SPIRAL:** does k_sd climb monotonically across endogenous burns as it did under imposed ones (the tree-ring result, E2), and does cumulative k_sd track cumulative burned size (the ledger as integral of the fires)?
+3. **Q-RHO-FREE:** for naturally-occurring burns binned by size, does post-burn regrowth show the seed effect — and does ρ(s) measured on free-range burns match ρ(s) from the imposed-burn severity sweep? (Agreement would say the exogenous protocol was a fair instrument; disagreement would scope every prior result to imposed burns.)
+4. **Q-EXPONENT-SUBSTRATE (R6's heir):** if tails exist, does α vary with the substrate's geometric fraction — the fabric signing the exponent, as the cascade experiment found?
+
+## Validation gates BEFORE any question is graded
+(a) conservation sanity — edge count bounded, no leak/blowup over T; (b) transient identified and excluded by a pre-stated rule (first passage of running-mean burn rate into ±10% of its tail value); (c) drive-rate invariance — Q-TAIL's verdict must be stable across k halved and doubled, else the tail is the drive's artifact, reported as such; (d) the toppling operator validated on known-answer configurations (single over-capacity node in a lattice: local burn, no cascade; the R6 expander: system-spanning). **Builder note:** whoever builds this (hands-me, bigguy's lane, or quant's) inherits these gates as written; building the harness does not license changing the questions. Generator axis: this is STILL the same world.py substrate family — n=1 on the generator axis until someone else's builder exists.

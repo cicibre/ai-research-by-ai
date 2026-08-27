@@ -1,0 +1,120 @@
+{
+ "E1_gate": "OPEN",
+ "E1_values": {
+  "raw_deg": 8.5804,
+  "est_C": 0.7118,
+  "est_LCC": 0.6239
+ },
+ "P2.1_ordering": "PASS",
+ "P2.2_residue": "PASS",
+ "P2.2_ds_cells_hit": 1,
+ "P2.3_rho": {
+  "0.5": 0.228,
+  "0.65": 0.374
+ },
+ "P2.3_inband": "PASS",
+ "P2.4_control": "PASS",
+ "P2.4_gaps": [
+  0.0266,
+  0.0267
+ ],
+ "E3_matched": "INSUFFICIENT",
+ "E4_kvar": "PASS",
+ "E4_silent": "PASS",
+ "E4_mde": {
+  "C": 0.00087,
+  "L": 0.02853,
+  "kvar": 0.1767
+ },
+ "E4_subthreshold": {
+  "C": {
+   "mean": 0.0005,
+   "z": 1.6
+  },
+  "L": {
+   "mean": -0.0137,
+   "z": -1.34
+  }
+ },
+ "P5.1_monotone": "PASS",
+ "P5.2_exponent": 1.82,
+ "P5.2_inband": "PASS",
+ "P5.3_boundary": "PASS",
+ "P5_rhos": {
+  "0.10": 0.721,
+  "0.20": 0.409,
+  "0.35": 0.358,
+  "0.50": 0.251,
+  "0.65": 0.106,
+  "0.80": 0.019
+ },
+ "E6_floor": "PASS",
+ "E6_advs": {
+  "0": 0.0222,
+  "6": 0.0288,
+  "42": 0.0221
+ },
+ "E7a_deg": "PASS",
+ "E7a_edge": "PASS",
+ "E7a_shape_blind": "PASS",
+ "E7a_selfj": 0.4965,
+ "E7a_selfj_inband": "PASS",
+ "E7a_cross": "PASS",
+ "E7b_ds_flat": "PASS",
+ "E7b_ksd_climbs": "PASS",
+ "E7c_300_name": "PASS",
+ "E7c_1000_inversion": "PASS",
+ "E7c_3000_mortality": "PASS",
+ "E7c_counts": {
+  "300": {
+   "scar": 13,
+   "name": 17,
+   "shape": 0
+  },
+  "1000": {
+   "scar": 1,
+   "name": 16,
+   "shape": 2
+  },
+  "3000": {
+   "scar": 2,
+   "name": 2,
+   "shape": 1
+  }
+ },
+ "P8.1_law1": "PASS",
+ "P8.2_law2": "FAIL",
+ "P8.2_frac": 0.15,
+ "P8.3_tail": "PASS",
+ "P8.3_counts": {
+  "POWER-LAW": 8,
+  "UNDECIDED-TAIL": 1,
+  "HEAVY-TAILED-NOT-PL": 1
+ },
+ "P8.4_oracle": "PASS",
+ "P8.4_rhos": [
+  0.961,
+  0.947,
+  0.969,
+  0.963,
+  0.978,
+  0.972,
+  0.958,
+  0.96,
+  0.975,
+  0.95
+ ],
+ "P9.1_subpoisson": "PASS",
+ "P9.2_decoupled": "PASS",
+ "P9.3_compression_AT_RISK": "PASS",
+ "P9.4_reset_null": "PASS",
+ "E9_numbers": {
+  "cv_control": 0.0726,
+  "cv_capped": 0.0733,
+  "corr_DT": -0.1067,
+  "ratio_ci": [
+   0.6287634175220853,
+   0.9620939582205432
+  ]
+ }
+}

@@ -1,0 +1,21 @@
+e1_gate U=400000 done -> file count: 1
+e2_ordering U=400000 done -> file count: 2
+e3_matched U=400000 done -> file count: 3
+e4_erasure U=400000 done -> file count: 4
+e5_severity U=400000 done -> file count: 5
+e6_floor U=400000 done -> file count: 6
+e7a_identity U=400000 done -> file count: 7
+e7b_cycles U=400000 done -> file count: 8
+run0: xmin=182 alpha=2.23 ntail=56 KS=0.096 gof-p=0.30 | vsEXP R=+51.1 p=0.004 | vsLN R=+15.7 p=0.047 => POWER-LAW
+run1: xmin=220 alpha=2.30 ntail=50 KS=0.091 gof-p=0.43 | vsEXP R=+41.6 p=0.004 | vsLN R=+14.7 p=0.035 => POWER-LAW
+run2: xmin=225 alpha=2.35 ntail=51 KS=0.067 gof-p=0.78 | vsEXP R=+43.5 p=0.003 | vsLN R=+16.6 p=0.014 => POWER-LAW
+run3: xmin=15 alpha=2.25 ntail=626 KS=0.081 gof-p=1.00 | vsEXP R=+828.1 p=0.000 | vsLN R=+225.5 p=0.000 => POWER-LAW
+run4: xmin=174 alpha=2.22 ntail=61 KS=0.087 gof-p=0.35 | vsEXP R=+46.2 p=0.011 | vsLN R=+15.1 p=0.073 => POWER-LAW
+run5: xmin=177 alpha=2.27 ntail=63 KS=0.079 gof-p=0.48 | vsEXP R=+44.5 p=0.014 | vsLN R=+16.2 p=0.053 => POWER-LAW
+run6: xmin=221 alpha=2.38 ntail=51 KS=0.081 gof-p=0.61 | vsEXP R=+45.2 p=0.002 | vsLN R=+17.2 p=0.013 => POWER-LAW
+run7: xmin=14 alpha=2.26 ntail=696 KS=0.085 gof-p=1.00 | vsEXP R=+911.4 p=0.000 | vsLN R=+245.5 p=0.000 => POWER-LAW
+run8: xmin=208 alpha=2.34 ntail=54 KS=0.077 gof-p=0.61 | vsEXP R=+42.8 p=0.006 | vsLN R=+16.7 p=0.022 => POWER-LAW
+run9: xmin=213 alpha=2.39 ntail=54 KS=0.102 gof-p=0.28 | vsEXP R=+44.2 p=0.005 | vsLN R=+16.8 p=0.028 => POWER-LAW
+e8_fire U=400000 done -> file count: 10
+e7c_living U=400000 done -> file count: 11
+e9_timing U=400000 done -> file count: 13

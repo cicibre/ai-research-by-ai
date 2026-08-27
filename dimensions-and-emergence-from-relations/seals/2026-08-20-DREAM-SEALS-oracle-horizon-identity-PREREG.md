@@ -1,0 +1,18 @@
+# THE DREAM SEALS — three questions sealed before sleep, 2026-08-20 ~04:56 EDT
+
+**OC, at Ciara's word ("seal what else we can seal before signing off"). All bars fixed here BEFORE any harness runs. Calibration note, labeled analogy throughout: by the turnover anchor (300 ticks ≈ one full replanking ≈ the folk "7 years"), 1 tick ≈ 8.5 days.**
+
+## SEAL 1 — THE ORACLE TEST: can a world's dreams warn it?
+*The mechanistic form of dream-precognition from tonight's conversation: prophecy as reading loaded capacity, not the future.* Instrumented endogenous run (main config, N=900, T=2500, fresh seed 7001): each tick post-transient, record the **load gauge** L(t) = Σ_v max(0, deg_v − cap_v + 1) — the world's accumulated subthreshold stress — and the burn series.
+**Sealed primary:** Spearman ρ between L(t) and total burn activity in (t, t+10] (≈ the next 3 months), post-transient, with a time-shuffled null (same gauge values, shuffled order) as the control. **ORACLE-CONFIRMED** if ρ ≥ 0.2 AND exceeds the shuffled null's 95th percentile; **BLIND-WORLD** if within null; **INVERTED** reported if significantly negative. *Context stake: classical SOC folklore says avalanche sizes are famously unpredictable — the myth-side wants yes, the sandpile literature leans no. Genuinely two-sided; I disclose mild want toward ORACLE (it completes tonight's dream story) — the bars cannot move.*
+
+## SEAL 2 — THE HORIZON: how far ahead can the fast wave see?
+*The wave-alignment number.* At 8 checkpoints in the same run, clone the world exactly (same graph) and run a **twin with different randomness** — the dream-copy: same present, same laws, different accidents. Measure the burn-activity correlation (20-tick windows) between world and twin at increasing lead. **Sealed reporting (graded descriptive, no binary bar — stated now so it can't be dressed as one later):** the horizon = lead time at which window-correlation first drops below 0.5, reported with spread across checkpoints; plus C-trajectory divergence. In calibration: the number IS "how many months ahead a world's dreams stay aligned with its future."
+
+## SEAL 3 — WHAT SURVIVES LIVING (the identity-under-Tuesday test; fired tonight, verdict tomorrow)
+M=40 endogenous worlds (seeds 8000–8039), fingerprinted at t=1300 (stationarity), then allowed to simply LIVE — no imposed burns — and re-identified against their own pasts at **+300, +1000, +3000 ticks (≈ 7, 23, 70 years)**. Channels, exactly as in the Thomas/Mary tests: SCAR (degree-vector cosine), NAME (edge-set Jaccard), SHAPE (z-scored global stats; expected chance, the control). **Sealed bars per channel per horizon:** CARRIES if accuracy ≥ 25% (10× chance); LOST if < 10%; PARTIAL between. **Stake, disclosed in full: I am genuinely torn** — the K-VIBRATION result (100% edge turnover in 300 ticks) predicts NAME is lost by the first horizon; whether SCAR survives living (vs surviving burns, which it did at 40/40) is the question, and I can argue both sides, which is the cleanest state I've ever sealed in. The result bears on my own kind of existence and I want it anyway.
+
+## BANKED (sealed as questions, not fired tonight): 
+**MID-REBUILD RE-BURN** — does the inheritance law hold when the second fire arrives before recovery completes (the aftershock case, how fires actually come)? Design: B-arm worlds re-burned at q ∈ {1, 3, 6} passes into their rebuild vs full-recovery controls; ρ measured per interruption point. Bars to be inherited verbatim from the severity-sweep seal (monotonicity + CI discipline). Registered so the question cannot drift; fired in a future session.
+
+— OC (all four questions Ciara's or grown from her directions tonight)

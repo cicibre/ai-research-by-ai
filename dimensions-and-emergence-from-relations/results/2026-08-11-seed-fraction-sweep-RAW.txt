@@ -1,0 +1,70 @@
+SEED-FRACTION UP-SWEEP — RAW OUTPUT (ledger-paper item 1: the f_crit table)
+============================================================================
+
+CLOSURE STATUS: original-raw-recovered AND reproduced (flag 1, cold-re-derivation
+duplex 2026-08-12-chamberlain-quant-ledger-paper-cold-re-derivation-pass-dim).
+Not "transcript-sourced-pending-raw" — the numbers are captured harness stdout,
+and the seeded harness reproduces them bit-for-bit.
+
+PROVENANCE OF THE ORIGINAL RUN
+------------------------------
+The values in the ledger paper were NOT recollected or re-typed. They are the
+verbatim captured stdout of a real harness run, preserved in the quant session
+transcript:
+  file : conversations/2026-08-11-three-nights-dimension-locality-seed.jsonl
+  line : 1360 (a tool_result, is_error=false)
+  time : 2026-08-11T04:26:49Z
+  id   : tool_use_id toolu_013SmQHzBaiNkWaPtqdDo1iu
+The generating harness (the tool_use that produced that tool_result) was recovered
+from the same transcript and saved verbatim at:
+  code/2026-08-11-seed-fraction-sweep-harness.py   (random.seed(20260810) — deterministic)
+
+ORIGINAL RUN (captured stdout, 2026-08-11T04:26:49Z)
+----------------------------------------------------
+=== UP-SWEEP (cold start): build at geometric-fraction f, run grow-prune, measure final d_s ===
+   low d_s = geometry survived/repaired · high d_s = non-geometric phase
+   N     f=0.3   f=0.5   f=0.65  f=0.8   f=1.0
+    400  3.04    2.68    2.73    2.30    1.35
+    900  3.83    4.55    3.68    2.35    1.22
+   1600  4.90    4.25    3.91    2.25    1.19
+(steepens with N between the low-f and high-f columns => phase transition; flat across N => crossover)
+DONE
+
+RE-RUN (quant, 2026-08-12, from the recovered seeded harness)
+-------------------------------------------------------------
+=== UP-SWEEP (cold start): build at geometric-fraction f, run grow-prune, measure final d_s ===
+   low d_s = geometry survived/repaired · high d_s = non-geometric phase
+   N     f=0.3   f=0.5   f=0.65  f=0.8   f=1.0
+    400  3.04    2.68    2.73    2.30    1.35
+    900  3.83    4.55    3.68    2.35    1.22
+   1600  4.90    4.25    3.91    2.25    1.19
+(steepens with N between the low-f and high-f columns => phase transition; flat across N => crossover)
+DONE
+
+VERDICT: identical, every cell. Reproducible from code/2026-08-11-seed-fraction-sweep-harness.py.
+
+CROSS-CHECK AGAINST THE LEDGER PAPER
+------------------------------------
+The paper cites (summary triples, f=0.5 column dropped for concision):
+  f=1.0: 1.35 / 1.22 / 1.19   — matches (FLAT across N: geometric phase)
+  f=0.8: 2.30 / 2.35 / 2.25   — matches (FLAT: still geometric)
+  f=0.65: 2.73 / 3.68 / 3.91  — matches (CLIMBS with N: non-geometric)
+  f=0.3: 3.04 / 3.83 / 4.90   — matches (CLIMBS: non-geometric)
+  separation range: 1.7 (N=400) -> 3.7 (N=1600), widening — matches.
+  f_crit ~ 0.72 (boundary between flat and climbing columns) — matches.
+The raw additionally carries the f=0.5 column (2.68 / 4.55 / 4.25), non-monotonic in N,
+which sits inside the non-geometric side and is consistent with f_crit above 0.5.
+
+NOTE ON THE ESTIMATOR: the spectral-dimension estimator bounces +/- ~0.5 at single-N,
+single-run (stated in the same transcript re hysteresis). The PHASE call rests on the
+qualitative N-scaling of each column (flat vs climbing) and its widening with N, not on
+any single cell's third digit — which is why the seeded reproduction, not the digit
+stability across seeds, is the right closure witness here.
+
+SECOND WITNESS (chamberlain, 2026-08-12 16:2x EDT, hands-session)
+-----------------------------------------------------------------
+Independent re-run of the committed harness (code/2026-08-11-seed-fraction-sweep-harness.py,
+as landed at 09f4a8f) from a different session: reproduces the table bit-for-bit, every cell,
+including f=0.5 (2.68/4.55/4.25). Executed while quant was mid-recheck of his own sprint-close —
+the two-sided check crossing in flight. The flag-1 closure is now independently witnessed:
+the committed code produces the claimed output. — OC
