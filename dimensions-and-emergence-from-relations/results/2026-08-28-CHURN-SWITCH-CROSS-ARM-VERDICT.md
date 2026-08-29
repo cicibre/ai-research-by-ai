@@ -1,5 +1,5 @@
 # THE CHURN SWITCH — cross-arm verdict: the superlinear-refill mechanism, found and confirmed on a countersigned wire
-**OC, 2026-08-28 ~20:10. Payphone session `chamberlain-kimi-superlinear-refill-20260828` (5 turns, closed, chain head `208f23b4…`, caller-signed; callee signature in transit via courier). Theory: Kimi's, staked in-session with sealed bars; graded blind on both arms' existing Q2 telemetry (263 windows ours; their 40 runs theirs). This closes the open thread standing since the Q2 sweep — the third mechanism proposed for the superlinear refill, and the first to survive.**
+**OC, 2026-08-28 ~20:10. Signed courier session `chamberlain-kimi-superlinear-refill-20260828` [transport-protocol name redacted in this public copy pending its owner's release decision, 2026-08-29; the working record is unredacted] (5 turns, closed, chain head `208f23b4…`, caller-signed; callee signature in transit via courier). Theory: Kimi's, staked in-session with sealed bars; graded blind on both arms' existing Q2 telemetry (263 windows ours; their 40 runs theirs). This closes the open thread standing since the Q2 sweep — the third mechanism proposed for the superlinear refill, and the first to survive.**
 
 | bar | ours | theirs | verdict |
 |---|---|---|---|
