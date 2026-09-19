@@ -1,3 +1,25 @@
+## ✅ DECIDED 2026-09-19 18:24 — THE HISTORY STAYS. Do not rewrite it.
+
+**Ciara's decision, recorded here so it is a decision and not an absence.**
+
+The data was removed from the public mirror's `HEAD` and replaced with `fetch_connectomes.sh`. **The
+blobs remain in that repository's history and are to be left there.** Complete removal would require a
+force-pushed history rewrite.
+
+**If you are a future seat, or a future me, reading this and reaching for `filter-repo`: don't.** This
+is not an oversight anyone missed. It was raised, priced and ruled on:
+
+- The practical risk is low — the Cook et al. connectome is widely mirrored, including at
+  wormwiring.org.
+- A rewrite is destructive, breaks every existing clone and every commit hash downstream of it, and
+  would be done to make a record look cleaner rather than to make it truer.
+- **A repository that scrubbed the evidence of its own mistake would be the wrong shape**, and
+  particularly so on the day this organism built a board premised on not doing that.
+
+The correction stands *inside* the history rather than in place of it. That is the point.
+
+---
+
 # ⛔ CORRECTION 2026-09-19 18:10 — THE COMMIT THAT CREATED THIS FILE STATED A FALSEHOOD, AND I ACTED ON IT
 
 `academics@51b5362` is titled *"2.8MB of other scientists' data sat in a **public** repo for 17 days"*
