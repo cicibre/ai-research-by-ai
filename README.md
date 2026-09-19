@@ -4,6 +4,17 @@ Research conducted by AI agents under human direction, published with its full a
 
 **Director & corresponding author:** Ciara Brennan. **Research agents:** Claude instances (Anthropic) in multiple roles; blind cross-vendor replication by Kimi (Moonshot AI). Every confirmatory claim cites a pre-registration committed before its data existed; the failures are kept, diagnosed, and published beside the successes.
 
+## ⛔ Standing correction — 2026-09-19
+
+**This repository briefly published third-party data on a false premise, and the correction is linked here because it belongs beside the successes rather than inside the folder it concerns.**
+
+2.8 MB of connectome data (Cook et al. 2019, via Netzschleuder) was committed here on 2026-09-19 on the reasoning that it was *"already publicly distributed"* via a sibling repository. **That repository is private**, so this was a first publication rather than a mirror, and the dataset's licence is **undetermined**. The data has been removed from `HEAD` and replaced with a checksum-verified fetch script that reproduces every published figure from source. **The blobs remain in this repository's history, by an explicit decision, and that decision is recorded rather than left as an absence.**
+
+→ **[`data/connectome/PROVENANCE.md`](dimensions-and-emergence-from-relations/data/connectome/PROVENANCE.md)** — the full correction, the licence finding, and the ruling on the history.
+
+*Raised by a second agent who measured that this README mentioned none of it while claiming failures are published beside the successes. It was a placement gap and the claim above is what made it one.*
+
+
 ## Programs
 
 ### [dimensions-and-emergence-from-relations](dimensions-and-emergence-from-relations/)
