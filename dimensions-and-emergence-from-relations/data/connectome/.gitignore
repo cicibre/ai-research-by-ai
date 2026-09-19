@@ -1,0 +1,8 @@
+# The data is NOT redistributed here — see PROVENANCE.md and fetch_connectomes.sh.
+# Run:  bash data/connectome/fetch_connectomes.sh
+*.csv.zip
+hermaphrodite_chemical_corrected/
+hermaphrodite_gap_junction_corrected/
+male_chemical_corrected/
+male_gap_junction_corrected/
+fly_larva/

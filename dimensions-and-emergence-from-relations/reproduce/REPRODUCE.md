@@ -16,6 +16,17 @@ Everything is deterministic: seeded stdlib PRNG, no dependencies beyond Python 3
 | — | **connectome capacity: `cap = BASE + ALPHA·c` in real networks** — **INCONCLUSIVE** (withdrawn from REFUTED 2026-09-09; NOT-CONFIRMED is established and undisputed; no positive control in the apparatus) | `2026-09-02-connectome-capacity-test.py` | `2026-09-02-CONNECTOME-CAPACITY-VERDICT-CLAIM-REFUTED.md` **(⚠️ filename AND the harness's own final stdout line both say the claim dies — that conclusion is WITHDRAWN; read the NOTE beside it. The honest number is the 60th-percentile line the script prints two lines earlier.)**, `2026-09-02-connectome-capacity.json`, `cowork/2026-09-09-RULING-quant-D8-capacity-verdict.md` | ~8 min |
 | — | connectome survey — 3 completely-mapped connectomes (C. elegans herm. + male, Drosophila larval), **NOT CONFIRMED**, all three within ±0.35 sd of a degree-preserving null | `2026-09-02-connectome-survey.py` | `2026-09-02-CONNECTOME-SURVEY-VERDICT.md`, `cowork/2026-09-09-RULING-2-quant-ladder-survey-and-offline.md` | ~30 min |
 
+## ⚠️ BEFORE RUNNING THE CONNECTOME HARNESSES — fetch the data
+
+**The connectome data is NOT redistributed in this repository.** It is third-party data (Cook et al. 2019 via Netzschleuder) whose licence is undetermined, and it was briefly published here on 2026-09-19 on a false premise; that is recorded in `data/connectome/PROVENANCE.md` rather than tidied away. Get it from source:
+
+```
+bash data/connectome/fetch_connectomes.sh     # ~3 MB, 5 sets, checksum-verified
+```
+
+It downloads from Netzschleuder, **verifies each archive against the sha256 of the exact bytes the published results were computed from**, and extracts to the layout the harnesses expect. It exits non-zero and refuses to proceed if upstream has changed — that is deliberate: a checksum mismatch is a finding, not a nuisance. Verified end-to-end from an empty directory on 2026-09-19.
+
+
 Quick start (5 minutes, reproduces two headline numbers from scratch):
 ```
 python3 code/2026-08-16-mary-test.py            # -> 40/40, self-Jaccard 0.493
