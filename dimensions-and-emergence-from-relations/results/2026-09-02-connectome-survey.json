@@ -1,0 +1,554 @@
+{
+  "seal": "experiment-designs/2026-09-02-CONNECTOME-SURVEY-PREREG.md (37223f6)",
+  "question": "Is the C. elegans failure universal, or is that network special?",
+  "standing": "The capacity law remains REFUTED regardless of this survey. A positive is a new question requiring its own stake, not a resurrection.",
+  "networks": {
+    "fly_larva": {
+      "network": "fly_larva",
+      "note": "Winding et al. Science 2023, complete synaptic map of the D. melanogaster larval brain. All nodes are neurons; no cell-type filter. etype and count discarded by binarisation.",
+      "n_nodes": 2956,
+      "n_edges": 95990,
+      "swap_multiplier": 10,
+      "n_null": 1000,
+      "mean_degree": 64.94587280108254,
+      "max_degree": 249,
+      "mean_clustering": 0.2611388895240343,
+      "n_degree_zero": 4,
+      "n_degree_lt2": 12,
+      "results": {
+        "decile_HEADLINE": {
+          "tau_0.8": {
+            "periphery": {
+              "n": 2660,
+              "intercept": 85.27002121922244,
+              "slope": 7.999815122812258,
+              "esr": 0.3545939958813848
+            },
+            "hub": {
+              "n": 296,
+              "intercept": 202.25337220296151,
+              "slope": -133.4735447685847,
+              "esr": 0.6130461246213307
+            },
+            "pooled_CONTEXT_ONLY": {
+              "n": 2956,
+              "intercept": 103.39240721333157,
+              "slope": -14.291416735975076,
+              "esr": 0.6214181014739338
+            }
+          },
+          "tau_0.9": {
+            "periphery": {
+              "n": 2660,
+              "intercept": 95.72184694403,
+              "slope": 23.385759566587275,
+              "esr": 0.180096644185089
+            },
+            "hub": {
+              "n": 296,
+              "intercept": 224.36786231648006,
+              "slope": -164.06489366327435,
+              "esr": 0.36358934164661133
+            },
+            "pooled_CONTEXT_ONLY": {
+              "n": 2956,
+              "intercept": 134.09186542903632,
+              "slope": -33.6449015793761,
+              "esr": 0.36902806362939755
+            }
+          },
+          "tau_0.95": {
+            "periphery": {
+              "n": 2660,
+              "intercept": 109.05250172140487,
+              "slope": 9.578832851802279,
+              "esr": 0.0789900030425473
+            },
+            "hub": {
+              "n": 296,
+              "intercept": 237.65095615315337,
+              "slope": -162.0680858549718,
+              "esr": 0.20591829273045364
+            },
+            "pooled_CONTEXT_ONLY": {
+              "n": 2956,
+              "intercept": 166.76072928232946,
+              "slope": -82.64202323885436,
+              "esr": 0.26638570009122176
+            }
+          }
+        },
+        "top5pct": {
+          "tau_0.8": {
+            "periphery": {
+              "n": 2808,
+              "intercept": 89.99376868414406,
+              "slope": 11.734176892014393,
+              "esr": 0.428318362079853
+            },
+            "hub": {
+              "n": 148,
+              "intercept": 208.17606363988403,
+              "slope": -81.82049583637017,
+              "esr": 0.5248680016460415
+            },
+            "pooled_CONTEXT_ONLY": {
+              "n": 2956,
+              "intercept": 103.39240721333157,
+              "slope": -14.291416735975076,
+              "esr": 0.6214181014739338
+            }
+          },
+          "tau_0.9": {
+            "periphery": {
+              "n": 2808,
+              "intercept": 110.38518418428234,
+              "slope": 4.616784968978028,
+              "esr": 0.21790853644256813
+            },
+            "hub": {
+              "n": 148,
+              "intercept": 221.8543987101011,
+              "slope": -85.8117997635605,
+              "esr": 0.3099825471558677
+            },
+            "pooled_CONTEXT_ONLY": {
+              "n": 2956,
+              "intercept": 134.09186542903632,
+              "slope": -33.6449015793761,
+              "esr": 0.36902806362939755
+            }
+          },
+          "tau_0.95": {
+            "periphery": {
+              "n": 2808,
+              "intercept": 126.98788758338533,
+              "slope": -14.506714675241039,
+              "esr": 0.1310384306013475
+            },
+            "hub": {
+              "n": 148,
+              "intercept": 256.1214660830751,
+              "slope": -193.47037984222092,
+              "esr": 0.12577192387117805
+            },
+            "pooled_CONTEXT_ONLY": {
+              "n": 2956,
+              "intercept": 166.76072928232946,
+              "slope": -82.64202323885436,
+              "esr": 0.26638570009122176
+            }
+          }
+        },
+        "top20pct": {
+          "tau_0.8": {
+            "periphery": {
+              "n": 2364,
+              "intercept": 96.39342714951734,
+              "slope": -92.07643474548684,
+              "esr": 0.38608107646322465
+            },
+            "hub": {
+              "n": 592,
+              "intercept": 175.62426981827238,
+              "slope": -94.77512330249009,
+              "esr": 0.7296405324622262
+            },
+            "pooled_CONTEXT_ONLY": {
+              "n": 2956,
+              "intercept": 103.39240721333157,
+              "slope": -14.291416735975076,
+              "esr": 0.6214181014739338
+            }
+          },
+          "tau_0.9": {
+            "periphery": {
+              "n": 2364,
+              "intercept": 98.63084634185093,
+              "slope": -53.78368143490343,
+              "esr": 0.1874929060567824
+            },
+            "hub": {
+              "n": 592,
+              "intercept": 210.0126493656241,
+              "slope": -149.49877840375282,
+              "esr": 0.34184345325277227
+            },
+            "pooled_CONTEXT_ONLY": {
+              "n": 2956,
+              "intercept": 134.09186542903632,
+              "slope": -33.6449015793761,
+              "esr": 0.36902806362939755
+            }
+          },
+          "tau_0.95": {
+            "periphery": {
+              "n": 2364,
+              "intercept": 97.75957495438152,
+              "slope": -21.365648609898845,
+              "esr": 0.08409643757919102
+            },
+            "hub": {
+              "n": 592,
+              "intercept": 229.6373765679971,
+              "slope": -179.21488415201674,
+              "esr": 0.2529787888834377
+            },
+            "pooled_CONTEXT_ONLY": {
+              "n": 2956,
+              "intercept": 166.76072928232946,
+              "slope": -82.64202323885436,
+              "esr": 0.26638570009122176
+            }
+          }
+        }
+      },
+      "null": {
+        "periphery": {
+          "slope_null": {
+            "mean": -51.65431761314171,
+            "sd": 220.4942438785842,
+            "p2.5": -343.94699006885327,
+            "p97.5": 564.4825416452743
+          },
+          "slope_observed": 23.385759566587275,
+          "slope_percentile_vs_null": 81.4,
+          "slope_z_vs_null": 0.34032669451929104,
+          "esr_null": {
+            "mean": 0.18418170230174372,
+            "sd": 0.004694287752124266,
+            "p2.5": 0.1734001413441435,
+            "p97.5": 0.1927550386726887
+          },
+          "esr_observed": 0.180096644185089,
+          "esr_percentile_vs_null_SECONDARY": 15.0
+        },
+        "hub": {
+          "slope_null": {
+            "mean": -1381.57083913932,
+            "sd": 1163.6574815847323,
+            "p2.5": -3576.4148099177905,
+            "p97.5": 1088.5229249968133
+          },
+          "slope_observed": -164.06489366327435,
+          "slope_percentile_vs_null": 86.1,
+          "slope_z_vs_null": 1.0462751838435995,
+          "esr_null": {
+            "mean": 0.3498315445368915,
+            "sd": 0.03695249956363184,
+            "p2.5": 0.2774832245890789,
+            "p97.5": 0.4285816951733221
+          },
+          "esr_observed": 0.36358934164661133,
+          "esr_percentile_vs_null_SECONDARY": 65.2
+        },
+        "pooled_CONTEXT_ONLY": {
+          "slope_null": {
+            "mean": -190.08497967212148,
+            "sd": 204.18839376762475,
+            "p2.5": -413.95862039971,
+            "p97.5": 430.58906720991524
+          },
+          "slope_observed": -33.6449015793761,
+          "slope_percentile_vs_null": 93.0,
+          "slope_z_vs_null": 0.766155584096425,
+          "esr_null": {
+            "mean": 0.44244935010654546,
+            "sd": 0.0055230396554830355,
+            "p2.5": 0.43160056420983056,
+            "p97.5": 0.4542250965191333
+          },
+          "esr_observed": 0.36902806362939755,
+          "esr_percentile_vs_null_SECONDARY": 0.0
+        }
+      },
+      "readout": {
+        "periphery_slope": 23.385759566587275,
+        "periphery_esr": 0.180096644185089,
+        "sharp": true,
+        "slope_positive": true,
+        "above_97.5_null": false,
+        "verdict": "REFUTED_in_this_network"
+      }
+    },
+    "celegans_male_shared": {
+      "network": "celegans_male_shared",
+      "note": "Cook et al. 2019 _corrected, male, restricted to the hermaphrodite's verified 300 by the discretion-free intersection rule (8 of the 300 absent from the male files). Sex-shared neurons only; ~93 male-specific neurons excluded.",
+      "n_nodes": 292,
+      "n_edges": 2244,
+      "swap_multiplier": 100,
+      "n_null": 1000,
+      "mean_degree": 15.36986301369863,
+      "max_degree": 78,
+      "mean_clustering": 0.33866714217084154,
+      "n_degree_zero": 3,
+      "n_degree_lt2": 4,
+      "results": {
+        "decile_HEADLINE": {
+          "tau_0.8": {
+            "periphery": {
+              "n": 262,
+              "intercept": 22.79154049769535,
+              "slope": -15.15407755671433,
+              "esr": 0.47382078503395736
+            },
+            "hub": {
+              "n": 30,
+              "intercept": 69.65091750122937,
+              "slope": -100.63580940719672,
+              "esr": 0.42608483642001405
+            },
+            "pooled_CONTEXT_ONLY": {
+              "n": 292,
+              "intercept": 29.68389500306423,
+              "slope": -26.841674186064857,
+              "esr": 0.9756868601669962
+            }
+          },
+          "tau_0.9": {
+            "periphery": {
+              "n": 262,
+              "intercept": 25.867192281110906,
+              "slope": -17.27142029097013,
+              "esr": 0.335528086942824
+            },
+            "hub": {
+              "n": 30,
+              "intercept": 79.02392337470882,
+              "slope": -123.83971403459519,
+              "esr": 0.35077558822237553
+            },
+            "pooled_CONTEXT_ONLY": {
+              "n": 292,
+              "intercept": 38.96721905178415,
+              "slope": -37.50823532943746,
+              "esr": 0.6348344276377624
+            }
+          },
+          "tau_0.95": {
+            "periphery": {
+              "n": 262,
+              "intercept": 28.476020219604198,
+              "slope": -19.311218088666433,
+              "esr": 0.29938206249243826
+            },
+            "hub": {
+              "n": 30,
+              "intercept": 92.78022407489274,
+              "slope": -157.89494594494954,
+              "esr": 0.10454308665223665
+            },
+            "pooled_CONTEXT_ONLY": {
+              "n": 292,
+              "intercept": 47.305882306247355,
+              "slope": -49.55294139421966,
+              "esr": 0.5424125647487515
+            }
+          }
+        },
+        "top5pct": {
+          "tau_0.8": {
+            "periphery": {
+              "n": 277,
+              "intercept": 25.53919116070832,
+              "slope": -19.857480908496406,
+              "esr": 0.5926870952077767
+            },
+            "hub": {
+              "n": 15,
+              "intercept": 103.6359724982443,
+              "slope": -224.38683092466016,
+              "esr": 0.15127471583306307
+            },
+            "pooled_CONTEXT_ONLY": {
+              "n": 292,
+              "intercept": 29.68389500306423,
+              "slope": -26.841674186064857,
+              "esr": 0.9756868601669962
+            }
+          },
+          "tau_0.9": {
+            "periphery": {
+              "n": 277,
+              "intercept": 31.92243811067219,
+              "slope": -27.332411685187886,
+              "esr": 0.3079618175194344
+            },
+            "hub": {
+              "n": 15,
+              "intercept": 113.29411648895876,
+              "slope": -252.3529390320716,
+              "esr": 3.5275753455420454e-08
+            },
+            "pooled_CONTEXT_ONLY": {
+              "n": 292,
+              "intercept": 38.96721905178415,
+              "slope": -37.50823532943746,
+              "esr": 0.6348344276377624
+            }
+          },
+          "tau_0.95": {
+            "periphery": {
+              "n": 277,
+              "intercept": 37.1968907901944,
+              "slope": -34.19689118171685,
+              "esr": 0.14947838797445223
+            },
+            "hub": {
+              "n": 15,
+              "intercept": 113.29411709848527,
+              "slope": -252.35294016070333,
+              "esr": 1.670956633785469e-08
+            },
+            "pooled_CONTEXT_ONLY": {
+              "n": 292,
+              "intercept": 47.305882306247355,
+              "slope": -49.55294139421966,
+              "esr": 0.5424125647487515
+            }
+          }
+        },
+        "top20pct": {
+          "tau_0.8": {
+            "periphery": {
+              "n": 233,
+              "intercept": 18.59804781852564,
+              "slope": -8.204359945146685,
+              "esr": 0.28832066595561523
+            },
+            "hub": {
+              "n": 59,
+              "intercept": 52.61282320106791,
+              "slope": -66.36251471084685,
+              "esr": 1.0242694984945615
+            },
+            "pooled_CONTEXT_ONLY": {
+              "n": 292,
+              "intercept": 29.68389500306423,
+              "slope": -26.841674186064857,
+              "esr": 0.9756868601669962
+            }
+          },
+          "tau_0.9": {
+            "periphery": {
+              "n": 233,
+              "intercept": 20.75824145527959,
+              "slope": -10.021979141626698,
+              "esr": 0.187850698711381
+            },
+            "hub": {
+              "n": 59,
+              "intercept": 70.40809446924997,
+              "slope": -103.0902204736685,
+              "esr": 0.3639339547178902
+            },
+            "pooled_CONTEXT_ONLY": {
+              "n": 292,
+              "intercept": 38.96721905178415,
+              "slope": -37.50823532943746,
+              "esr": 0.6348344276377624
+            }
+          },
+          "tau_0.95": {
+            "periphery": {
+              "n": 233,
+              "intercept": 21.21528304320097,
+              "slope": -7.962201692727256,
+              "esr": 0.08099908203140611
+            },
+            "hub": {
+              "n": 59,
+              "intercept": 92.67904771223635,
+              "slope": -157.28766592135867,
+              "esr": 0.11391989249897994
+            },
+            "pooled_CONTEXT_ONLY": {
+              "n": 292,
+              "intercept": 47.305882306247355,
+              "slope": -49.55294139421966,
+              "esr": 0.5424125647487515
+            }
+          }
+        }
+      },
+      "null": {
+        "periphery": {
+          "slope_null": {
+            "mean": -10.437049075548952,
+            "sd": 25.76386214623212,
+            "p2.5": -48.461537276974155,
+            "p97.5": 48.702025642809055
+          },
+          "slope_observed": -17.27142029097013,
+          "slope_percentile_vs_null": 49.5,
+          "slope_z_vs_null": -0.2652696702315139,
+          "esr_null": {
+            "mean": 0.265609042883495,
+            "sd": 0.03510144595618809,
+            "p2.5": 0.19991509393660573,
+            "p97.5": 0.3449737226574873
+          },
+          "esr_observed": 0.335528086942824,
+          "esr_percentile_vs_null_SECONDARY": 95.8
+        },
+        "hub": {
+          "slope_null": {
+            "mean": -507.77801398298203,
+            "sd": 200.59647937379762,
+            "p2.5": -848.4297556077628,
+            "p97.5": -148.56688981931268
+          },
+          "slope_observed": -123.83971403459519,
+          "slope_percentile_vs_null": 98.0,
+          "slope_z_vs_null": 1.9139832421133596,
+          "esr_null": {
+            "mean": 0.2748912446380472,
+            "sd": 0.16430695993497368,
+            "p2.5": 0.04529873241709755,
+            "p97.5": 0.6846993188736978
+          },
+          "esr_observed": 0.35077558822237553,
+          "esr_percentile_vs_null_SECONDARY": 72.6
+        },
+        "pooled_CONTEXT_ONLY": {
+          "slope_null": {
+            "mean": -51.67790542961251,
+            "sd": 27.780434893116393,
+            "p2.5": -97.28434329445076,
+            "p97.5": 25.974527321556632
+          },
+          "slope_observed": -37.50823532943746,
+          "slope_percentile_vs_null": 76.5,
+          "slope_z_vs_null": 0.5100593332930902,
+          "esr_null": {
+            "mean": 0.7919477702771666,
+            "sd": 0.05764814271335417,
+            "p2.5": 0.6696845921934,
+            "p97.5": 0.8976245231207005
+          },
+          "esr_observed": 0.6348344276377624,
+          "esr_percentile_vs_null_SECONDARY": 0.3
+        }
+      },
+      "readout": {
+        "periphery_slope": -17.27142029097013,
+        "periphery_esr": 0.335528086942824,
+        "sharp": true,
+        "slope_positive": false,
+        "above_97.5_null": false,
+        "verdict": "REFUTED_in_this_network"
+      }
+    }
+  },
+  "swap_depth_gate": {
+    "mean_10E": -55.95985806353097,
+    "sd_10E": 30.622872097489687,
+    "mean_100E": -56.897518,
+    "sd_100E": 30.550196,
+    "abs_mean_diff": 0.937659936469025,
+    "mean_tolerance": 7.637549,
+    "sd_ratio_dev": 0.0023789077323657093,
+    "sd_tolerance": 0.2,
+    "PASS": true
+  }
+}

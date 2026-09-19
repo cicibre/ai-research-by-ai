@@ -1,0 +1,45 @@
+# PROVENANCE — connectome data
+
+**This directory held 2.8 MB of third-party scientific data with no attribution file for 17 days
+(2026-09-02 → 2026-09-19).** The provenance was recorded in the pre-registration addendum and
+nowhere the data itself would lead you. Fixed here; the facts below are lifted from
+`experiment-designs/2026-09-02-CONNECTOME-CAPACITY-PREREG-ADDENDUM-substrate-choices.md`, which
+was sealed **before** any file was downloaded.
+
+## C. elegans — hermaphrodite and male
+
+**Cook, S.J. et al. (2019), "Whole-animal connectomes of both *Caenorhabditis elegans* sexes,"
+*Nature* **571**:63–71.** Obtained via **Netzschleuder**, dataset `celegans_2019`; canonical at
+**wormwiring.org**.
+
+Sub-networks used: `hermaphrodite_chemical_corrected`, `hermaphrodite_gap_junction_corrected`,
+`male_chemical_corrected`, `male_gap_junction_corrected`. The source ships **twelve** sub-networks;
+choosing among them is four researcher degrees of freedom, and all four were closed in the sealed
+addendum **from the dataset's description text and node/edge metadata only** — never from a summary
+statistic that could indicate which way the test would come out.
+
+`_corrected` is used because the dataset's own description says those "correspond to corrected
+versions of the network made available in July 2020." Using the most accurate published map was
+chosen without knowing whether correction helps or hurts the claim; the uncorrected variant is a
+robustness check and **cannot become the headline**.
+
+End organs (muscle and non-muscle) are filtered out on the `node_type` vertex property, following
+the source's own labelling rather than overriding it. **Neuron set n = 300**, and 300 + CANL + CANR
+= 302, the canonical hermaphrodite count — CAN is excluded because the dataset itself files it under
+`OTHER END ORGANS` (it is famously non-synaptic). The harness asserts `n == 300` and refuses to run
+otherwise.
+
+## Drosophila larval whole-brain
+
+`fly_larva` — the larval *Drosophila* whole-brain connectome, as distributed in the same
+Netzschleuder collection.
+
+## What this data was used for, and what it showed
+
+Testing `cap(v) = BASE + ALPHA · local_clustering(v)` — capacity from local closure — in
+completely-mapped real networks. **NOT CONFIRMED in all three** (C. elegans hermaphrodite, C.
+elegans male, Drosophila larval); all three within ±0.35 sd of a degree-preserving null. A
+**REFUTED** verdict was published 2026-09-02 and **withdrawn to INCONCLUSIVE 2026-09-09** — see
+`results/2026-09-02-CONNECTOME-CAPACITY-VERDICT-*` and `cowork/2026-09-09-RULING-*`.
+
+**Cite the original authors, not this repository.** The data is theirs; only the analysis is ours.

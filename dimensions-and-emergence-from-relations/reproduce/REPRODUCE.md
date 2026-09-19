@@ -1,6 +1,6 @@
 # Reproducing the results — map from brief to code
 
-Everything is deterministic: seeded stdlib PRNG, no dependencies beyond Python 3.9+ (one legacy script uses numpy; nothing in the brief depends on it). Every world rebuilds exactly from its seed. Layout **of this mirror** (corrected 2026-09-19 — this line previously described the private working tree's directories, naming `experiment-designs/` and `cowork/`, neither of which exists here; a reader following it found nothing): `code/` harnesses+analyses · **`seals/`** pre-registrations (each committed BEFORE its data; verify with `git log --follow <file>`) · `results/` raw logs and JSON telemetry · `paper/` the briefs · `reviews/` the refutation ledger · `notebook/` the step-by-step trail · `provenance/` · `artifacts/`.
+Everything is deterministic: seeded stdlib PRNG, no dependencies beyond Python 3.9+ (one legacy script uses numpy; nothing in the brief depends on it). Every world rebuilds exactly from its seed. Layout **of this mirror** (corrected 2026-09-19 — this line previously described the private working tree's directories, naming `experiment-designs/` and `cowork/`, neither of which exists here; a reader following it found nothing): `code/` harnesses+analyses · **`seals/`** pre-registrations (each committed BEFORE its data; verify with `git log --follow <file>`) · `results/` raw logs and JSON telemetry · `paper/` the briefs · `cowork/` an external reviewer's rulings (verbatim) · `reviews/` the refutation ledger · `notebook/` the step-by-step trail · `provenance/` · `artifacts/`.
 
 | Brief § | Claim | Producer (code/) | Raw data (results/) | ~Runtime |
 |---|---|---|---|---|
@@ -13,6 +13,8 @@ Everything is deterministic: seeded stdlib PRNG, no dependencies beyond Python 3
 | 3.8 tail | CSN power-law discipline | `2026-08-19-tail-analysis-CSN.py` (self-tests first) | `endogenous-burns/` | ~min |
 | 3.8 timing | renewal null, CI, corr(D,T), reset ablation | `2026-08-22-timing-null-analysis.py`, `2026-08-22-reset-null-driver.py` | `reset-null-v3/*.json` | analysis: seconds; re-run: ~30 min |
 | §2.4 | cross-vendor replication | our seals: `seals/2026-08-21-*KIMI*`; their implementation is theirs (available on request) | `2026-08-21-*KIMI-VERDICT*` | — |
+| — | **connectome capacity: `cap = BASE + ALPHA·c` in real networks** — **INCONCLUSIVE** (withdrawn from REFUTED 2026-09-09; NOT-CONFIRMED is established and undisputed; no positive control in the apparatus) | `2026-09-02-connectome-capacity-test.py` | `2026-09-02-CONNECTOME-CAPACITY-VERDICT-CLAIM-REFUTED.md` **(filename overstates it — read the NOTE beside it)**, `2026-09-02-connectome-capacity.json`, `cowork/2026-09-09-RULING-quant-D8-capacity-verdict.md` | ~8 min |
+| — | connectome survey — 3 completely-mapped connectomes (C. elegans herm. + male, Drosophila larval), **NOT CONFIRMED**, all three within ±0.35 sd of a degree-preserving null | `2026-09-02-connectome-survey.py` | `2026-09-02-CONNECTOME-SURVEY-VERDICT.md`, `cowork/2026-09-09-RULING-2-quant-ladder-survey-and-offline.md` | ~30 min |
 
 Quick start (5 minutes, reproduces two headline numbers from scratch):
 ```
