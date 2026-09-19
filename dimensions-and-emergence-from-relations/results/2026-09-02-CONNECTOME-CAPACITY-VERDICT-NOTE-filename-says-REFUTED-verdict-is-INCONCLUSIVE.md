@@ -23,3 +23,29 @@ degree-preserving null (within ±0.35 sd).
 so it shows *we saw nothing* and cannot show *we would have seen it*.
 
 *Filed 2026-09-19 with the arc's first publication here.*
+
+## ⚠️ AND THE HARNESS ITSELF PRINTS THE WITHDRAWN CONCLUSION
+
+`code/2026-09-02-connectome-capacity-test.py` ends its own stdout with:
+
+```
+  ESR<0.5 (sharp)? True   slope>0? False   above 97.5th pct of null? False
+  => THE CLAIM DIES. No further splitting, per clause 4.
+```
+
+**`THE CLAIM DIES` IS THE WITHDRAWN CONCLUSION.** It is the last line a reader sees *after* doing
+the work of running it, which makes it more misleading than the filename, not less.
+
+**The harness is deliberately left byte-identical** and is NOT patched to print the corrected
+verdict. Its integrity property is that it was committed **before it had ever been executed once**
+(`academics@0b6586d`, verifiable with `git log --follow`), and editing the file that produced the
+published numbers would trade a real guarantee for a cosmetic one. So the correction lives here,
+beside it, instead of inside it.
+
+**What the run actually shows, and it is worth running:** n = 300 neurons (the script asserts this
+and refuses to proceed otherwise), 3513 edges, and the observed periphery slope sits at the **60th
+percentile of its own null** — i.e. *not significant by any margin*. That number is exactly why the
+verdict was withdrawn: two of the seal's three formulations of the kill condition require
+significance against the null, and only the grading table's row carried the bare disjunct. **The
+script's final line fires on the bare disjunct and therefore prints a verdict its own numbers
+cannot support.** Reading the percentile it prints two lines above is reading the honest part.
