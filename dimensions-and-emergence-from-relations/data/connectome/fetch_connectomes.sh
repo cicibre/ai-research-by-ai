@@ -37,7 +37,23 @@ SETS=(
 "fly_larva|$BASE_FL/fly_larva.csv.zip|6a8b7d8f2287027fba6723e1db41df968b4668469072b6ee4af314a2eabd1edc"
 )
 
-sha() { shasum -a 256 "$1" 2>/dev/null | cut -d' ' -f1 || sha256sum "$1" | cut -d' ' -f1; }
+# ⚠️ DO NOT rewrite this as `shasum … | cut … || sha256sum … | cut …`. A pipeline's exit
+# status is the LAST command's, so `cut` returns 0 whether or not the hasher ran and the
+# fallback is UNREACHABLE. That version returned an EMPTY digest with exit 0 on any host
+# without `shasum`, which then mismatched every archive and reported THIRD-PARTY DATA
+# CORRUPTION for a missing local binary — under a message telling the reader never to
+# dismiss it. Found in review 2026-09-20, confirmed empirically, fixed here.
+if command -v shasum >/dev/null 2>&1;   then HASHER=shasum
+elif command -v sha256sum >/dev/null 2>&1; then HASHER=sha256sum
+else
+  echo "⛔ NO SHA-256 TOOL ON THIS HOST (need shasum or sha256sum)." >&2
+  echo "   This is a MISSING LOCAL TOOL, not a data problem. Nothing was downloaded." >&2
+  exit 2
+fi
+sha() { case "$HASHER" in
+          shasum)    shasum -a 256 "$1" | cut -d' ' -f1 ;;
+          sha256sum) sha256sum   "$1" | cut -d' ' -f1 ;;
+        esac; }
 
 rc=0
 echo "── fetching connectome data from source ──"
@@ -64,8 +80,13 @@ for row in "${SETS[@]}"; do
     mv "$zip.part" "$zip"
   fi
 
-  # extract to the layout the harnesses expect: <name>/{nodes,edges,gprops}.csv
-  if [ ! -f "$name/nodes.csv" ] || [ ! -f "$name/edges.csv" ]; then
+  # ⚠️ ALWAYS EXTRACT FROM THE VERIFIED ARCHIVE. The previous version skipped extraction
+  # whenever both CSVs already existed, so STALE OR HAND-EDITED CSVs survived a fresh
+  # checksum-verified download and the script still printed "ALL SETS VERIFIED" — the
+  # checksum covered the ARCHIVE while the message claimed it covered the DATA. Extraction
+  # is idempotent and these files are small; re-extracting is the cheap way to make the
+  # success line true. Found in review 2026-09-20.
+  if true; then
     mkdir -p "$name"
     if ! unzip -oq "$zip" -d "$name" 2>/dev/null; then
       echo "    ⛔ UNZIP FAILED for $zip"; rc=1; continue
@@ -83,7 +104,9 @@ done
 
 echo
 if [ "$rc" = 0 ]; then
-  echo "  ALL SETS PRESENT AND VERIFIED against the bytes the published results used."
+  echo "  ALL SETS PRESENT. Each ARCHIVE's sha256 matches the bytes the published results"
+  echo "  used, and every CSV was re-extracted from that verified archive on this run —"
+  echo "  so the guarantee covers the archive AND the files the harnesses will read."
   echo "  The C. elegans harness additionally asserts n == 300 neurons and refuses to run otherwise;"
   echo "  that is an independent check on the extraction, not a substitute for these checksums."
 else
